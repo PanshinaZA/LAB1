@@ -127,3 +127,8 @@ message EventList {
 
 <img width="289" height="204" alt="image" src="https://github.com/user-attachments/assets/447daa18-099d-487e-ba13-a1bde346ce46" />
 
+## Шаг 4. Реализация сервера
+Создаем файл server.py и прописываем в нем код сервера, аналогично с файлом клиента client.py:
+
+<img width="849" height="505" alt="image" src="https://github.com/user-attachments/assets/330f7266-c5d0-4ac1-8d97-79fb661e25f7" />
+<img width="810" height="683" alt="image" src="https://github.com/user-attachments/assets/7040f6b3-907a-4769-8075-524b27faefa5" />
