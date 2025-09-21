@@ -62,7 +62,7 @@ Architecture), реализованная с помощью парадигмы �
 
 <img width="1118" height="184" alt="image" src="https://github.com/user-attachments/assets/630c2fa0-4925-4990-a23c-154fe19f1cd9" />
 
-<img width="724" height="64" alt="image" src="https://github.com/user-attachments/assets/68d7856b-f1f0-4041-be1b-1e22b690ec83" />
+<img width="662" height="48" alt="image" src="https://github.com/user-attachments/assets/1d93ee83-c2ce-46e4-b550-9110ef6fb3cc" />
 
 <img width="1044" height="155" alt="image" src="https://github.com/user-attachments/assets/3d81b9e4-cd45-47fc-aa0a-1d3f1a837292" />
 
