@@ -66,4 +66,55 @@ Architecture), реализованная с помощью парадигмы �
 
 <img width="1044" height="155" alt="image" src="https://github.com/user-attachments/assets/3d81b9e4-cd45-47fc-aa0a-1d3f1a837292" />
 
+## Определение сервиса в .proto файле
 
+'''
+// Указываем синтаксис proto3
+syntax = "proto3";
+ // Определяем пакет для нашего сервиса
+package calendar;
+ // Сервис для занесения новых событий в календарь
+service CalendarService {
+  rpc CreateEvent(EventDetails) returns (EventResponse);
+  rpc GetEvent(EventRequest) returns (EventDetails);
+  rpc UpdateEvent(EventDetails) returns (EventResponse);
+  rpc DeleteEvent(EventRequest) returns (EventResponse);
+  rpc ListEvents(EventsFilter) returns (EventList);
+}
+
+message EventDetails {
+  string event_id = 1;
+  string title = 2;
+  string description = 3;
+  string start_time = 4;
+  string end_time = 5;
+  string location = 6;
+  repeated string attendees = 7;
+  string organizer = 8;
+  string status = 9; // scheduled, cancelled, completed
+  string created_at = 10;
+  string updated_at = 11;
+}
+
+message EventRequest {
+  string event_id = 1;
+}
+
+message EventResponse {
+  bool success = 1;
+  string message = 2;
+  EventDetails event = 3;
+}
+
+message EventsFilter {
+  string start_date = 1;
+  string end_date = 2;
+  string organizer = 3;
+  string status = 4;
+}
+
+message EventList {
+  repeated EventDetails events = 1;
+  int32 total_count = 2;
+}
+'''
