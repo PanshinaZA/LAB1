@@ -119,4 +119,11 @@ message EventList {
 }
 ```
 ## Шаг 3. Генерация кода
+Выполним в терминале команду для генерации Python-классов из .proto файла: 
+
+<img width="1179" height="15" alt="image" src="https://github.com/user-attachments/assets/f3f9b5ab-0b34-4e39-9088-094491d4752d" />
+
+В папке появятся два новых файла: calendar_pb2.py и calendar_pb2_grpc.py, которые содержат сгенерированные классы для клиента и сервера.
+
+<img width="289" height="204" alt="image" src="https://github.com/user-attachments/assets/447daa18-099d-487e-ba13-a1bde346ce46" />
 
