@@ -141,5 +141,8 @@ message EventList {
 Затем откроем второй терминал, в котором запустим клиент:
 <img width="651" height="241" alt="image" src="https://github.com/user-attachments/assets/6ed82897-e6d0-43be-8a01-eb0a74f8768c" />
 
+Проверим все ли команды работают:
+<img width="1483" height="388" alt="image" src="https://github.com/user-attachments/assets/55de1c8a-c825-46d5-b958-dfe94cb27d18" />
+
 ## Выводы
 В ходе выполнения лабораторной работы освоены принципы удаленного вызова процедур и их применение в распределенных системах, изучены основы фреймворка gRPC и языка определения интерфейсов Protocol Buffers, а также реализовано клиент-серверное приложение на языке Python с использованием gRPC.
