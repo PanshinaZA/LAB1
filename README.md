@@ -75,13 +75,18 @@ syntax = "proto3";
 package calendar;
  // Сервис для занесения новых событий в календарь
 service CalendarService {
+  // RPC метод для создания нового события
   rpc CreateEvent(EventDetails) returns (EventResponse);
+  // RPC метод для получения информации о событии по его ID
   rpc GetEvent(EventRequest) returns (EventDetails);
+  // RPC метод для обновления существующего события
   rpc UpdateEvent(EventDetails) returns (EventResponse);
+  // RPC метод для удаления события по его ID
   rpc DeleteEvent(EventRequest) returns (EventResponse);
+  // RPC метод для получения списка событий с фильтрацией
   rpc ListEvents(EventsFilter) returns (EventList);
 }
-
+// Сообщение с детальной информацией о событии
 message EventDetails {
   string event_id = 1;
   string title = 2;
@@ -95,24 +100,24 @@ message EventDetails {
   string created_at = 10;
   string updated_at = 11;
 }
-
+// Сообщение для запроса события по ID
 message EventRequest {
   string event_id = 1;
 }
-
+// Сообщение-ответ с результатом операции
 message EventResponse {
   bool success = 1;
   string message = 2;
   EventDetails event = 3;
 }
-
+// Сообщение для фильтрации событий при запросе списка
 message EventsFilter {
   string start_date = 1;
   string end_date = 2;
   string organizer = 3;
   string status = 4;
 }
-
+// Сообщение со списком событий
 message EventList {
   repeated EventDetails events = 1;
   int32 total_count = 2;
