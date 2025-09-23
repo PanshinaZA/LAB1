@@ -141,13 +141,13 @@ message EventList {
 ## Шаг 5. Запуск и проверка
 Откроем новый терминал, активируем виртуальное окружение и запсутим наш сервер:
 
-<img width="789" height="256" alt="image" src="https://github.com/user-attachments/assets/fd90c0ec-8d3e-4b82-9078-4b5df0890baa" />
+<img width="665" height="196" alt="image" src="https://github.com/user-attachments/assets/827dd25b-5e2c-4e12-ae8b-5cf1ad84216d" />
 
 Затем откроем второй терминал, в котором запустим клиент:
-<img width="651" height="241" alt="image" src="https://github.com/user-attachments/assets/6ed82897-e6d0-43be-8a01-eb0a74f8768c" />
+<img width="682" height="189" alt="image" src="https://github.com/user-attachments/assets/a22ce309-985a-4b94-8466-3760190bfd9e" />
 
 Проверим, все ли команды работают:
-<img width="1483" height="388" alt="image" src="https://github.com/user-attachments/assets/55de1c8a-c825-46d5-b958-dfe94cb27d18" />
+<img width="1529" height="370" alt="image" src="https://github.com/user-attachments/assets/2f0dc5c0-c515-470b-8b55-e4442840d7d9" />
 
 ## Выводы
 В ходе выполнения лабораторной работы освоены принципы удаленного вызова процедур и их применение в распределенных системах, изучены основы фреймворка gRPC и языка определения интерфейсов Protocol Buffers, а также реализовано клиент-серверное приложение на языке Python с использованием gRPC.
