@@ -142,7 +142,7 @@ message EventList {
 <img width="810" height="683" alt="image" src="https://github.com/user-attachments/assets/7040f6b3-907a-4769-8075-524b27faefa5" />
 
 ## Шаг 5. Запуск и проверка
-Откроем новый терминал, активируем виртуальное окружение и запсутим наш сервер:
+Откроем новый терминал, активируем виртуальное окружение и запустим наш сервер:
 
 <img width="665" height="196" alt="image" src="https://github.com/user-attachments/assets/827dd25b-5e2c-4e12-ae8b-5cf1ad84216d" />
 
