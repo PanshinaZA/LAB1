@@ -86,7 +86,7 @@ service CalendarService {
   rpc UpdateEvent(EventDetails) returns (EventResponse);
   // RPC метод для удаления события по его ID
   rpc DeleteEvent(EventRequest) returns (EventResponse);
-  // RPC метод для получения списка событий с фильтрацией
+  // RPC метод для получения списка всех событий
   rpc ListEvents(EventsFilter) returns (EventList);
 }
 // Сообщение с детальной информацией о событии
@@ -113,7 +113,7 @@ message EventResponse {
   string message = 2;
   EventDetails event = 3;
 }
-// Сообщение для фильтрации событий при запросе списка
+// Сообщение с запросом для выведения всех событий
 message EventsFilter {
   string start_date = 1;
   string end_date = 2;
